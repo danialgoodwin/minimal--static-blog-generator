@@ -8,6 +8,7 @@ _Missing 'Best Practices' and 'SEO' due to server-side configuration._
 
 
 ## Features
+- Minimal website size (9 KB uncompressed)
 - Simplicity
 - No JavaScript
 - Looks ~~great~~ good on desktop and mobile

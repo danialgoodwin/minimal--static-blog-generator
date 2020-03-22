@@ -2,6 +2,11 @@ body {
   background-color: whitesmoke;
 }
 
+h1 > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .blog {
   max-width: 38rem;
   padding: 1.5rem;
