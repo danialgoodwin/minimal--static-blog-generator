@@ -115,7 +115,6 @@ def generate_site():
 
     for f in Path(POSTS_OUTPUT_DIR).rglob('*.*'):
         css_html_js_minify.minify.process_multiple_files(str(f))
-        css_html_js_minify.minify.process_multiple_files(str(f))
 
 
 def main():
