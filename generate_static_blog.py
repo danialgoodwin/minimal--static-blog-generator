@@ -78,7 +78,7 @@ def parse_blog_post_file(file: Path) -> json:
                 logging.error(f'This syntax is not supported yet: {line}')
     values['content'] = markdown.markdown(values['content'])
     if 'slug' not in values:
-        values['slug'] = file.name.rstrip('.md')
+        values['slug'] = file.name.lower().rstrip('.md').replace(' ', '-')
     return values
 
 

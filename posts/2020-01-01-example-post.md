@@ -1,6 +1,6 @@
 ---
-title: Example Post 2
-slug: example-post-2
+title: Inconvenient Hobbies
+slug: inconvenient-hobbies
 ---
 # Example Post 2
 Here's a small description
