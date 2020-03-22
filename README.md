@@ -6,6 +6,12 @@ Simple static blog generator, written in Python, with the top Lighthouse scores.
 _Missing 'Best Practices' and 'SEO' due to server-side configuration._
 
 
+## Screenshots
+![Minimal blog home page](blog-home.png "Minimal static blog home page")
+
+![Minimal blog post](blog-post.png "Minimal static blog post")
+
+
 
 ## Usage
 1. Add posts to `posts/`
