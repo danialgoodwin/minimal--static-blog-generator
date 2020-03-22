@@ -96,9 +96,11 @@ def generate_post(values: json):
 
 def generate_site():
     shutil.rmtree(POSTS_OUTPUT_DIR, ignore_errors=True)
-    Path(POSTS_OUTPUT_DIR).mkdir(mode=0o755, parents=True, exist_ok=True)
+    Path(POSTS_OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
     posts_html = '<ul class="posts">'
-    for file in Path(POSTS_INPUT_DIR).glob('*.md'):
+    post_files = list(Path(POSTS_INPUT_DIR).glob('*.md'))
+    post_files.reverse()  # Put more recent posts at the top
+    for file in post_files:
         values = parse_blog_post_file(file)
         generate_post(values)
         slug = values['slug']
