@@ -114,7 +114,7 @@ def generate_site():
     shutil.copytree(ASSETS_INPUT_DIR, ASSETS_OUTPUT_DIR)
 
     for f in Path(POSTS_OUTPUT_DIR).rglob('*.*'):
-        print(f'--------------f={f}')
+        css_html_js_minify.minify.process_multiple_files(str(f))
         css_html_js_minify.minify.process_multiple_files(str(f))
 
 
