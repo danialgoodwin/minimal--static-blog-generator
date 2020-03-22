@@ -8,7 +8,7 @@ _Missing 'Best Practices' and 'SEO' due to server-side configuration._
 
 
 ## Features
-- Minimal website size (9 KB uncompressed)
+- Minimal website size (9 KB pretty, 2 KB minified)
 - Simplicity
 - No JavaScript
 - Looks ~~great~~ good on desktop and mobile
@@ -29,7 +29,11 @@ _Missing 'Best Practices' and 'SEO' due to server-side configuration._
 2. Run: `python generate_static_blog.py`
 3. See results in `public/blog/`
 
-Optional, here's an easy way to deploy to a server (assuming you have npm installed):
+Optional - Add minifier:
+1. Run: `pip install css-html-js-minify`
+2. Run: `css-html-js-minify.exe public/blog/`
+
+Optional - Here's an easy way to deploy to a server (assuming you have npm installed):
 1. Run: `npx surge public/blog my-blog.surge.sh`
 Note: You will need to change the sub-domain of the '*.surge.sh' URL
 
