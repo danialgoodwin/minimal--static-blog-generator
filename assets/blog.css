@@ -1,0 +1,14 @@
+body {
+  background-color: whitesmoke;
+}
+
+.blog {
+  max-width: 38rem;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.posts {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
